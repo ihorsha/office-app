@@ -1,3 +1,7 @@
+# Purpose
+
+This is the Office App developed for educational purposes, aimed at students learning Python, JavaScript, and Django. It is production-ready and available for free use within organizations as part of their internal digital tools and technological ecosystem.
+
 # Office App
 
 Office App is a web application helping employees of the specific company which uses the hybrid workplace model to quickly reserve desks and rooms in the office.
