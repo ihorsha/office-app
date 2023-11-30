@@ -1,0 +1,35 @@
+{% extends "office/layout.html" %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h2>Login</h2>
+
+        <form action="{% url 'login' %}" method="post">
+            
+            {% csrf_token %}
+
+            <div class="row g-2">
+
+                {% for message in messages %}
+                    <div class="errorlist">{{ message }}</div>
+                {% endfor %}
+                
+                {% for field in form.visible_fields %}
+                
+                    <div class="col-sm-12">
+                        {{ field }}
+                    </div>
+
+                {% endfor %}
+
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Login">
+                    Don't have an account? <a href="{% url 'register' %}">Register</a>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+{% endblock %}

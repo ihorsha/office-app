@@ -1,0 +1,34 @@
+{% extends "office/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <header class="py-3 border-bottom page-header">
+        <div class="container-fluid">
+            <h4>Hi {{ user.first_name }}! 👋</h4>
+            <div class="text-muted">Here's all your bookings for today</div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        
+        <div class="py-3">
+            <h5>Your desk</h5>
+            <div id="desks"></div>
+        </div>
+
+        <div class="py-3">
+            <h5>Rooms</h5>
+            <div id="rooms"></div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'office/index.js' %}"></script>
+{% endblock %}

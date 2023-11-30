@@ -1,0 +1,320 @@
+/* Common */
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* Forms */
+
+label.list-group-item {
+    cursor: pointer;
+}
+
+label.list-group-item:hover {
+    background-color: #fafafa
+}
+
+.errorlist {
+    color: red;
+}
+
+.btn-success {
+    background-color: rgb(0, 198, 122);
+    border-color: rgb(0, 198, 122);
+}
+.btn-success:hover,
+.btn-success:focus {
+    background-color: rgb(0, 182, 112);
+    border-color: rgb(0, 187, 115);
+}
+
+.btn-outline-danger {
+    color: rgb(255, 0, 98);
+    border-color: rgb(255, 122, 173);
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    color: rgb(255, 0, 98);
+    background-color: rgb(255, 234, 241);
+    border-color: rgb(255, 122, 173);
+}
+
+.success {
+    color: rgb(0, 163, 101) !important;
+}
+
+.text-bg-success {
+    background-color: rgb(0, 198, 122) !important;
+}
+
+.text-bg-light {
+    border: 1px solid #cccccc;
+    background-color: transparent !important;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar.bg-light {
+    background-color: #ffffff !important;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    color: #000000 !important;
+    padding: 0 10px;
+}
+
+.navbar .nav a:hover {
+    color: #0d6efd !important;
+}
+
+.menu-icon {
+    font-size: 30px;
+    text-align: center !important;
+}
+
+.sub-section a {
+    color: #000000;
+    padding: 12px 16px;
+}
+
+.sub-section a:hover {
+    color: #0d6efd;
+}
+
+.sub-section a.active {
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+}
+
+/* Pills */
+
+.nav.nav-pills li.nav-item a {
+    padding: 4px 12px;
+    border-radius: 30px !important;
+}
+
+#capacity b {
+    margin-right: 0.5rem;
+}
+
+/* Preferences */
+
+.preferences .title {
+    font-weight: bold;
+}
+
+.preferences .options {
+    display: inline-block;
+}
+
+.preferences .options label.btn.btn-outline-primary {
+    padding: 4px 12px;
+    margin: 1px 0;
+    border-radius: 30px !important;
+}
+
+.preferences .options a {
+    cursor: pointer
+}
+
+.preferences #date-custom input {
+    padding: 3px 12px;
+    border-radius: 30px !important;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.preferences #date-custom input::placeholder {
+    color: #ffffff;
+  }
+  
+.preferences #date-custom input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.preferences #date-custom input::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+/* Calendar */
+
+#calendar .calendar-weekdays,
+#calendar .calendar-weekday,
+#calendar .calendar-day {
+    /* font-size: 0.75rem; */
+}
+
+#calendar .title {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+#calendar .calendar-weekdays > div {
+    font-weight: bold;
+    text-align: center;
+}
+
+#calendar .calendar-weekday,
+#calendar .calendar-day,
+#calendar .calendar-empty-day {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+#calendar .calendar-day.selectable {
+    background: #ffffff;
+}
+
+#calendar .calendar-day.my-booking,
+#calendar .calendar-day.selectable:hover {
+    box-shadow: 0 0 0 1px inset #63a2ff;
+    cursor: pointer;
+}
+
+#calendar .calendar-day.my-booking {
+    background-color: #eaf2ff;
+}
+
+#calendar .calendar-day .date {
+    padding-top: 0.5rem;
+}
+
+#calendar .calendar-weekday:last-child,
+#calendar .calendar-day:last-child,
+#calendar .calendar-empty-day:last-child {
+    border-right-width: 1px;
+}
+
+#calendar .d-flex:last-child > .calendar-day,
+#calendar .d-flex:last-child > .calendar-empty-day {
+    border-bottom-width: 1px;
+}
+
+#calendar .d-flex:last-child > .calendar-day:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+#calendar .d-flex:last-child > .calendar-day:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+#calendar #prev-month,
+#calendar #next-month {
+    cursor: pointer;
+}
+
+#calendar #prev-month:hover,
+#calendar #next-month:hover {
+    color: #0d6efd;
+}
+
+/* Facility card */
+
+#desks input,
+#rooms input {
+    display: none;
+}
+
+.facility-card {
+    height: 100%;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.facility-card.disabled {
+    background-color: transparent;
+}
+
+.facility-card.my-booking,
+.facility-card.selectable:hover {
+    border-color: #63a2ff;
+    cursor: pointer;
+}
+
+.facility-card.my-booking {
+    background-color: #eaf2ff;
+}
+
+.facility-card .name {
+    font-weight: bold;
+}
+
+.facility-card .name span {
+    font-weight: normal;
+    color: #777777;
+}
+
+.facility-card .peer {
+    font-size: 0.75rem;
+}
+
+.facility-card .peer .teammate {
+    color: #0d6efd;
+}
+
+.facility-card .amenities,
+.facility-card .check-in,
+.facility-card .legal-docs,
+.facility-card .health-check {
+    font-size: 0.75rem;
+    color: #555555;
+    padding-top: 6px;
+    margin-top: 6px;
+    border-top: 1px solid #eaeaea;
+}
+
+.facility-card .availability {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 6px;
+    border-top: 1px solid #eaeaea;
+}
+
+.facility-card .availability .slots > label {
+    padding: 4px 12px;
+    margin-top: 6px;
+    border-radius: 30px !important;
+}
+
+.facility-card .failure {
+    color: red;
+}
+
+.facility-card .alert-warning {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    margin-top: 6px;
+}
+
+.facility-card .btn-success:disabled {
+    background-color: rgb(0, 198, 122);
+    border-color: rgb(0, 198, 122);
+    opacity: 0.4;
+}
+
+.form-submit-container {
+    text-align: center;
+}
+
+.form-submit-container input {
+    width: 200px !important;
+}

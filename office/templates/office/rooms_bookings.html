@@ -1,0 +1,26 @@
+{% extends "office/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <header class="mb-3 border-bottom page-header sub-section">
+        <div class="d-flex justify-content-center py-0">
+            <ul class="nav">
+                <li class="nav-item"><a href="{% url 'rooms' %}" class="nav-link">Book a room</a></li>
+                <li class="nav-item"><a href="{% url 'rooms_bookings' %}" class="nav-link active">My bookings</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <div id="rooms"></div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'office/index.js' %}"></script>
+{% endblock %}

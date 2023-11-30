@@ -1,0 +1,306 @@
+[
+  {
+    "model": "office.departments",
+    "pk": 1,
+    "fields": {
+      "name": "Business Operations"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 2,
+    "fields": {
+      "name": "Research and Development"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 3,
+    "fields": {
+      "name": "Marketing"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 4,
+    "fields": {
+      "name": "Sales"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 5,
+    "fields": {
+      "name": "HR"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 6,
+    "fields": {
+      "name": "Finance"
+    }
+  },
+  {
+    "model": "office.departments",
+    "pk": 7,
+    "fields": {
+      "name": "Transformation"
+    }
+  },
+
+  {
+    "model": "office.amenities",
+    "pk": 1,
+    "fields": {
+      "name": "Monitor",
+      "facility": "desk"
+    }
+  },
+  {
+    "model": "office.amenities",
+    "pk": 2,
+    "fields": {
+      "name": "Keyboard",
+      "facility": "desk"
+    }
+  },
+  {
+    "model": "office.amenities",
+    "pk": 3,
+    "fields": {
+      "name": "Charger",
+      "facility": "desk"
+    }
+  },
+  {
+    "model": "office.amenities",
+    "pk": 4,
+    "fields": {
+      "name": "Whiteboard",
+      "facility": "room"
+    }
+  },
+  {
+    "model": "office.amenities",
+    "pk": 5,
+    "fields": {
+      "name": "Screen",
+      "facility": "room"
+    }
+  },
+  {
+    "model": "office.amenities",
+    "pk": 6,
+    "fields": {
+      "name": "Speaker",
+      "facility": "room"
+    }
+  },
+
+  {
+    "model": "office.floors",
+    "pk": 1,
+    "fields": {
+      "name": 1
+    }
+  },
+  {
+    "model": "office.floors",
+    "pk": 2,
+    "fields": {
+      "name": 2
+    }
+  },
+  {
+    "model": "office.floors",
+    "pk": 3,
+    "fields": {
+      "name": 3
+    }
+  },
+  {
+    "model": "office.floors",
+    "pk": 4,
+    "fields": {
+      "name": 4
+    }
+  },
+
+  {
+    "model": "office.desks",
+    "pk": 1,
+    "fields": {
+      "name": "#1",
+      "floor": 1,
+      "amenities": [1,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 2,
+    "fields": {
+      "name": "#2",
+      "floor": 1,
+      "amenities": [1]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 3,
+    "fields": {
+      "name": "#3",
+      "floor": 1,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 4,
+    "fields": {
+      "name": "#4",
+      "floor": 2,
+      "amenities": [1,2]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 5,
+    "fields": {
+      "name": "#5",
+      "floor": 3,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 6,
+    "fields": {
+      "name": "#6",
+      "floor": 3,
+      "amenities": [1,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 7,
+    "fields": {
+      "name": "#7",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 8,
+    "fields": {
+      "name": "#8",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 9,
+    "fields": {
+      "name": "#9",
+      "floor": 4,
+      "amenities": [1]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 10,
+    "fields": {
+      "name": "#10",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 11,
+    "fields": {
+      "name": "#11",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 12,
+    "fields": {
+      "name": "#12",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 13,
+    "fields": {
+      "name": "#13",
+      "floor": 4,
+      "amenities": [1,2,3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 14,
+    "fields": {
+      "name": "#14",
+      "floor": 4,
+      "amenities": [3]
+    }
+  },
+  {
+    "model": "office.desks",
+    "pk": 15,
+    "fields": {
+      "name": "#15",
+      "floor": 4,
+      "amenities": [1]
+    }
+  },
+
+  {
+    "model": "office.rooms",
+    "pk": 1,
+    "fields": {
+      "name": "#1",
+      "floor": 4,
+      "capacity": 12,
+      "amenities": [4,3]
+    }
+  },
+  {
+    "model": "office.rooms",
+    "pk": 2,
+    "fields": {
+      "name": "#2",
+      "floor": 4,
+      "capacity": 4,
+      "amenities": [5]
+    }
+  },
+  {
+    "model": "office.rooms",
+    "pk": 3,
+    "fields": {
+      "name": "#3",
+      "floor": 1,
+      "capacity": 2,
+      "amenities": [4,5,6]
+    }
+  },
+  {
+    "model": "office.rooms",
+    "pk": 4,
+    "fields": {
+      "name": "#4",
+      "floor": 2,
+      "capacity": 6,
+      "amenities": [6]
+    }
+  }
+]

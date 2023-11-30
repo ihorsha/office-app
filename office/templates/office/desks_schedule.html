@@ -1,0 +1,66 @@
+{% extends "office/layout.html" %}
+
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <header class="mb-3 border-bottom page-header sub-section">
+        <div class="d-flex justify-content-center py-0">
+            <ul class="nav">
+                <li class="nav-item"><a href="{% url 'desks' %}" class="nav-link active">Book a desk</a></li>
+                <li class="nav-item"><a href="{% url 'desks_bookings' %}" class="nav-link">My bookings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+
+        <form method="post" id="desk-schedule">
+
+            {% csrf_token %}
+
+            <div class="row mb-2 preferences">
+                <div class="col-sm-1 py-1 title">When</div>
+                <div class="col-sm-11 options">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="{% url 'desks' %}" class="nav-link">Today</a></li>
+                        <li class="nav-item"><a href="{% url 'desks_schedule' %}" class="nav-link active">Later</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-2 preferences">
+                <div class="col-sm-1 py-1 title">Amenities</div>
+                <div class="col-sm-11 options">
+                    {% for amenity in amenities %}
+                        <input class="btn-check" type="checkbox" name="amenities" id="amenity-{{ amenity.id }}" value="{{ amenity.id }}" checked>
+                        <label class="btn btn-outline-primary" for="amenity-{{ amenity.id }}">{{ amenity.name }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row mb-2 preferences">
+                <div class="col-sm-1 py-1 title">Floor</div>
+                <div class="col-sm-11 options">
+                    <input class="btn-check" type="radio" name="floors" id="any" value="" checked>
+                    <label class="btn btn-outline-primary" for="any">Any</label>
+                    {% for floor in floors %}
+                        <input class="btn-check" type="radio" name="floors" id="floor-{{ floor.id }}" value="{{ floor.id }}">
+                        <label class="btn btn-outline-primary" for="floor-{{ floor.id }}">{{ floor.name }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="row py-3 g-2">
+                <div class="py-2" id="calendar"></div>
+            </div>
+
+        </form>
+
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'office/desks_schedule.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "office/layout.html" %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h2>Register</h2>
+
+        {% if message %}
+            <div>{{ message }}</div>
+        {% endif %}
+
+        <form action="{% url 'register' %}" method="post">
+
+            {% csrf_token %}
+
+            <div class="row g-2">
+                
+                <div class="input-group">
+                    {% for field in form.visible_fields %}
+                    
+                        {% if field.label == "First name" or field.label == "Last name" %}
+                            {{ field }}
+                            {{ field.errors }}
+                        {% endif %}
+
+                    {% endfor %}
+                </div>
+
+                {% for field in form.visible_fields %}
+                
+                    {% if field.label != "First name" and field.label != "Last name" %}
+                        <div class="col-sm-12">
+                            {{ field }}
+                            {{ field.errors }}
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+                
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Register">
+                    Already have an account? <a href="{% url 'login' %}">Log In</a>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+{% endblock %}
