@@ -12,8 +12,6 @@ This app allows users to manage various office facilities such as desks and room
 
 Office App utilizes Django on the back-end, JavaScript on the front-end, and Bootstrap library making this app **mobile-responsive**.
 
-Check out the [Demo](https://youtu.be/JWX24jR5kTk?feature=shared) on YouTube to see the app in action.
-
 # Features
 
 ### Desk booking
